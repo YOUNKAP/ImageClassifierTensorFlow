@@ -1,2 +1,1 @@
-# ImageClassifierTensorFlow
-UDACITY Introduction to Machine Learning with TensorFlow Nanodegree Program project 2
+# Intro to Machine Learning - TensorFlow Project
