@@ -25,5 +25,5 @@ def predict(image_path, model, top_k):
     predict = model.predict(image_batch_size)
     #Finds values and indices of the k top probabilities
     top_k_values, top_k_indices = tf.math.top_k(predict, top_k)
-    top_k_classes = [class_names[str(index)] for index in top_k_indices.numpy()[0]]
+    top_k_classes = [class_names[str(index +1)] for index in top_k_indices.numpy()[0]]
     return top_k_values.numpy()[0], top_k_classes
